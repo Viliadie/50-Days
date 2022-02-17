@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expending Cards</title>
+    <link rel="stylesheet" href="slyles.css">
+</head>
+
+<body>
+    <div class='container'>
+        <div class="panel active"
+            style="background-image: url('https://images.unsplash.com/photo-1643491420478-ecaac11b35ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80')">
+            <h3>Colors</h3>
+        </div>
+        <div class="panel"
+            style="background-image: url('https://images.unsplash.com/photo-1637531646331-8c9e8d548ef6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60')">
+            <h3>Colors</h3>
+        </div>
+        <div class="panel"
+            style="background-image: url('https://images.unsplash.com/photo-1640716209382-431219d0225d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')">
+            <h3>Colors</h3>
+        </div>
+        <div class="panel"
+            style="background-image: url('https://images.unsplash.com/photo-1640798482410-d459ce868f63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60')">
+            <h3>Colors</h3>
+        </div>
+        <div class="panel"
+            style="background-image: url('https://images.unsplash.com/photo-1639160666264-0fd308c44e24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80')">
+            <h3>Colors</h3>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+const panels = document.querySelectorAll('.panel')
+
+panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+        removeActiveClasses()
+        panel.classList.add('active')
+    })
+})
+
+function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove('active')
+    })
+}
+
+    </script>
+</body>
+
+</html>
